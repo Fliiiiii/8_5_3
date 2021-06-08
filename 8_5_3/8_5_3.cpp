@@ -60,8 +60,9 @@ int main()
 		printf("Тупоугольный треугольник со сторонами: %g, %g и %g \n", d1, d2, d3);
 		break;
 	case 5:
-		printf("Треугольник с такими точками не существует");
-		break;
+		printf("Треугольник с такими точками не существует\n");
+		system("pause");
+		exit(0);
 	}
 	printf("Площадь:%g\n",Sq(A, B, C));
 	printf("Высоты:%g, %g, %g\n", H(A, B, Sq(A,B,C)), H(A, C, Sq(A, B, C)), H(C, B, Sq(A, B, C)));
